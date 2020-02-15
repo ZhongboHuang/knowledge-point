@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.wrapper {
+    width: 250px;
+    height: 248px;
+    margin: 100px auto 0;
+    border: 1px solid pink;
+    border-right: 0;
+    overflow: hidden;
+    #left {
+        float: left;
+        li {
+            background: url(../images/lili.jpg) repeat-x;
+            a {
+                display: block;
+                width: 48px;
+                height: 27px;
+                border-bottom: 1px solid pink;
+                line-height: 27px;
+                text-align: center;
+                color: black;
+                &:hover {
+                    background-image: url(../images/abg.gif);
+                }
+            }
+        }
+    }
+    #content {
+        float: left;
+        border-left: 1px solid pink;
+        border-right: 1px solid pink;
+    }
+}
